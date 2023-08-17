@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f9ca24, #f0932b); /* Yellow background gradient */
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/bg.png');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px; /* Increase the width of the main section */
+  padding: 20px;
+  background-color: hsla(0, 0%, 100%, 0.3); /* Yellow background color */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  animation: fadeIn 1s;
+  border: 1px solid white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.text-center {
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #888888;
+}
+
+.vertical-section {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/box.png");
+  background-position: 40% 40%;
+  background-size: 160% 175%;
+  
+}
+
+.vertical-section h4 {
+  margin-top: -10px;
+  padding: 10px;
+  color: #fff; /* White text color for section headings */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.vertical-section p {
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+/* Adjust spacing between fields */
+.vertical-section p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Yellow theme color for h1 and .description remains the same */
+h3, .description {
+  color: #ffffff;
+}
+
+
+.titleGif{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.icon{
+  width: 15px;
+  height: auto;
+}
