@@ -1,4 +1,3 @@
-# import Web3 library
 from web3 import Web3
 
 # Reference Link : https://web3py.readthedocs.io/en/stable/web3.eth.html
