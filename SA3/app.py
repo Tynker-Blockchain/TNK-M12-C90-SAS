@@ -29,7 +29,7 @@ def home():
         amount = request.form.get("amount")
         mode = request.form.get("mode")
 
-        # Calculate the gas/transaction fee prices/ get the mode from front end
+        # Get gasPrices, gweiPrices, etherPrices, dollarPrices from allPrices
         gasPrices, gweiPrices, etherPrices, dollarPrices = allPrices
         
         # Calculate gasPriceGwei, gasPriceEther, transactionFeeEther, transactionFeeDollar
