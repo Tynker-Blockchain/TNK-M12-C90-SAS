@@ -35,7 +35,7 @@ def home():
         transactionFeeEther = etherPrices[mode] * 21000
         transactionFeeDollar = dollarPrices[mode] * 21000
         # Store euroPrice[mode] in transactionFeeEuro
-        transactionFeeEuro = str(euroPrices[mode])
+        transactionFeeEuro = euroPrices[mode] * 21000
         
         # Add transactionFeeEuro key
         transaction = { 
